@@ -1,0 +1,15 @@
+section {
+  height: 500px;
+  border: solid black 1px;
+  background-color: white;
+}
+
+.hero {
+  background-color:#1c1d25;
+  height: 100vh;
+}
+
+footer {
+  height: 500px;
+  background-color: black;
+}
