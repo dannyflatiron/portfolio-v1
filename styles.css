@@ -1,3 +1,7 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 section {
   height: 500px;
   border: solid black 1px;
@@ -32,4 +36,31 @@ ul {
 li {
   /* width: 200px; */
   text-decoration: none;
+}
+
+h1 {
+  font-size: 90px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hero-text {
+  margin-left: 80px;
+}
+
+.button {
+  width: 200px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: coral;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 6px;
+  margin-top: 20px;
 }
