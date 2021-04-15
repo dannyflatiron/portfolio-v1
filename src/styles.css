@@ -83,5 +83,14 @@ p {
 }
 
 .socials {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+}
+
+.logo {
+  height: 150px;;
+  margin: 30px;
+}
+
+.social {
+  margin: 20px;
 }
