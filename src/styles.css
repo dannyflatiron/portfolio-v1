@@ -4,7 +4,6 @@ body {
 
 section {
   /* height: 500px; */
-  border: solid black 1px;
   background-color: white;
 }
 
@@ -99,6 +98,19 @@ p {
   margin: 20px;
 }
 
+.sub-section-about-me {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+
+.sub-section-projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
 .headshot {
   height: 350px;
   width: 350px;
@@ -109,4 +121,15 @@ p {
   display: flex;
   align-items: center;
   margin-top: 0;
+}
+
+.project-card {
+  width: 200px;
+  height: 500px; 
+  box-shadow: 5px 5px 20px rgb(155, 149, 149);
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
 }
