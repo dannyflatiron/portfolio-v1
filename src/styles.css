@@ -52,6 +52,13 @@ p {
   font-weight: 300;
 }
 
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .hero-area {
   display: flex;
   height: 100%;
@@ -124,12 +131,26 @@ p {
 }
 
 .project-card {
-  width: 200px;
-  height: 500px; 
+  width: 400px;
+  height: 470px; 
   box-shadow: 5px 5px 20px rgb(155, 149, 149);
+  margin: 10px;
 }
 
 .project-container {
   display: flex;
   justify-content: space-around;
 }
+
+.project-image {
+  height: 250px;
+  width: 250px;
+  border-radius: 75%;
+  margin-top: 25px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
