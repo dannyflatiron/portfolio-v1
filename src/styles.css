@@ -1,5 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -18,7 +20,8 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 80px;
+  padding-top: 30px;
+  padding-bottom: 100px;
 }
 
 nav {
@@ -45,6 +48,11 @@ h1 {
 
 h2 {
   font-size: 70px;
+  margin: 0;
+}
+
+#h2-contact-me {
+  padding-top: 0;
   margin: 0;
 }
 
@@ -107,6 +115,16 @@ p {
   margin: 20px;
 }
 
+svg {
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+}
+
+svg:hover {
+  fill: #b43307;
+  transform: scale(1.2);
+}
+
 .sub-section-about-me {
   display: flex;
   justify-content: space-around;
@@ -151,13 +169,6 @@ p {
   }
 }
 
-/* .project-image {
-  height: 250px;
-  width: 250px;
-  border-radius: 75%;
-  margin-top: 25px;
-} */
-
 .project-image {
   margin-top: 25px;
   width: 250px;
@@ -180,8 +191,21 @@ a {
   color: white;
 }
 
+.nav-buttons:hover {
+  color: #b43307;
+}
+
+.nav-buttons:active {
+  color: #a9a9a9;
+  color: #808080;
+}
+
 .hamburger {
   display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -191,9 +215,55 @@ a {
     background-color: transparent;
     color: white;
     font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
   }
 
   ul {
     display: none;
+    background-color: #262732;
+    margin: 0px;
   }
+
+  ul.show {
+    display: block;
+  }
+  
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #262732;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+.contact-form-submit-btn {
+  background-color: #00C5BE;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.container {
+  width: auto;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  height: 45px;
+  margin: 10px;
+  width: 350px;
+}
+
+textarea.form-control {
+  height: 200px;
 }
