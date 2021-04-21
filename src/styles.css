@@ -179,11 +179,27 @@ svg:hover {
 hr {
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .project-link {
   text-decoration: none;
-  color: #ef744b;
+  /* color: #ef744b; */
+  color: white;
+  width: 450px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: coral;
+  padding: 10px;
+}
+
+.project-link:hover {
+  background-color: #b43307;
+}
+
+.project-link:active {
+  background-color: #a9a9a9;
+  color: #808080;
 }
 
 a {
