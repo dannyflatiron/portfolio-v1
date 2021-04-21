@@ -14,10 +14,10 @@
     <section class="hero">
       <nav>
         <img class="logo" src="src/images/logo.png" alt="profile photo"/>
-        <ul>
-          <li><a class="nav-buttons" href="#about-me">About Me</a></li>
-          <li><a class="nav-buttons" href="#projects">Projects</a></li>
-          <li><a class="nav-buttons" href="#contact">Contact</a></li>
+        <ul class="ul-container" id="nav-list">
+            <li class="nav-button-container grow"><a class="nav-buttons" href="#about-me">About Me</a></li>
+            <li class="nav-button-container grow"><a class="nav-buttons" href="#projects">Projects</a></li>
+            <li class="nav-button-container grow"><a class="nav-buttons" href="#contact">Contact</a></li>
         </ul>
         <button class="hamburger" id="hamburger">
           <i class="fas  fa-bars"></i>
@@ -27,7 +27,7 @@
         <div class="hero-text">
           <h1>Danny Reina</h1>
           <p>Software Engineer</p>
-          <div class="button"><a href="#about-me">About Me</a></div>
+          <div class="button grow"><a href="#about-me">Contact Info</a></div>
         </div>
         <div class="socials">
           <div>
@@ -109,7 +109,7 @@
             <div class="form-group">
                 <textarea placeholder="Your Message" class="form-control" name="message" rows="10" cols="16" onfocus="this.placeholder = this.placeholder=='Your Message'?'':this.placeholder;" onblur="this.placeholder = this.placeholder==''?'Your Message':this.placeholder;" required></textarea>
             </div>
-            <button type="submit" class="contact-form-submit-btn">Submit Form</button>
+            <button type="submit" class="contact-form-submit-btn grow">Submit Form</button>
         </form>
     </div>
     </footer>
