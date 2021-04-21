@@ -82,7 +82,7 @@ p {
 }
 
 .button {
-  width: 200px;
+  width: 250px;
   height: 55px;
   border-radius: 30px;
   background-color: coral;
@@ -191,12 +191,32 @@ a {
   color: white;
 }
 
-.nav-buttons:hover {
-  color: #b43307;
+.ul-container {
+  display: flex;
+  align-items: flex-start;
+  width: 700px;
+  margin-top: 25px;
+  padding: 0;
+  justify-content: space-around;
 }
 
-.nav-buttons:active {
-  color: #a9a9a9;
+.nav-button-container {
+  width: 200px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: coral;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.nav-button-container:hover {
+  background-color: #b43307;
+}
+
+.nav-button-container:active {
+  background-color: #a9a9a9;
   color: #808080;
 }
 
@@ -210,35 +230,47 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .hamburger {
-    display: block;
+    display: flex;
     border: 0;
     background-color: transparent;
     color: white;
     font-size: 30px;
-    margin: 20px;
-    align-self: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    /* align-self: flex-start; */
   }
 
   ul {
     display: none;
     background-color: #262732;
-    margin: 0px;
+    margin-bottom: 25px;
+  }
+
+  .ul-container {
+    display: none;
   }
 
   ul.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
 
   nav {
     display: flex;
-    flex-direction: column-reverse;
     background-color: #262732;
+    justify-content: center;
+    align-self: flex-end;
   }
 
   .logo {
     display: none;
   }
+
+
 }
 
 .contact-form-submit-btn {
@@ -284,3 +316,11 @@ a {
 textarea.form-control {
   height: 200px;
 }
+
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
+  
+.grow:hover { 
+  transform: scale(1.1); 
+} 
