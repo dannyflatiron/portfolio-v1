@@ -15,9 +15,9 @@
       <nav>
         <img class="logo" src="src/images/logo.png" alt="profile photo"/>
         <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-buttons" href="#about-me">About Me</a></li>
+          <li><a class="nav-buttons" href="#projects">Projects</a></li>
+          <li><a class="nav-buttons" href="#contact">Contact</a></li>
         </ul>
         <button class="hamburger" id="hamburger">
           <i class="fas  fa-bars"></i>
@@ -91,8 +91,27 @@
       </div>
     </section>
     <footer id="contact">
-      <h2>Contact Me</h2>
-      <p>dannyflatiron@gmail.com</p>
+      <h2 id="h2-contact-me">Contact Me</h2>
+      <div class="container">
+        <form target="_blank" action="https://formsubmit.co/dannyflatiron@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Splash!" />
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting me. I have received your message and will respond at my earliest convenience.">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" onfocus="this.placeholder = this.placeholder=='Full Name'?'':this.placeholder;" onblur="this.placeholder = this.placeholder==''?'Full Name':this.placeholder;" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" onfocus="this.placeholder = this.placeholder=='Email Address'?'':this.placeholder;" onblur="this.placeholder = this.placeholder==''?'Email Address':this.placeholder;" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" cols="16" onfocus="this.placeholder = this.placeholder=='Your Message'?'':this.placeholder;" onblur="this.placeholder = this.placeholder==''?'Your Message':this.placeholder;" required></textarea>
+            </div>
+            <button type="submit" class="contact-form-submit-btn">Submit Form</button>
+        </form>
+    </div>
     </footer>
     <script src="src/app.js"></script>
   </body>
