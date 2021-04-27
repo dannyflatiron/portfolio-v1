@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -288,9 +292,15 @@ a {
 }
 
 .nav-buttons {
+  display: inline-block;
   position: relative;
   z-index: 80;
-  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: -3em;
+  border-radius: 30px;
 }
 
 .hamburger {
