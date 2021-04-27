@@ -157,7 +157,7 @@ p {
   height: 150px;;
   margin: 30px;
   position: relative;
-  z-index: 10;
+  z-index: 80;
 }
 
 .social {
