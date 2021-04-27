@@ -156,6 +156,8 @@ p {
 .logo {
   height: 150px;;
   margin: 30px;
+  position: relative;
+  z-index: 10;
 }
 
 .social {
