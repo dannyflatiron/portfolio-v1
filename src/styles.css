@@ -70,6 +70,43 @@ p {
   font-weight: 300;
 }
 
+.information a {
+  text-decoration: none;
+  line-height: 1;
+  
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 5px 5px;
+  overflow: hidden;
+  color: #333;
+  vertical-align: bottom;
+  transition: color .3s ease-out;
+}
+
+.information a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #FC5C7D 0%, #6A82FB 100%);
+
+  transition: transform .25s ease-out;
+}
+
+.information a:hover { 
+  color: #fff; 
+}
+.information a:hover::before {
+  transform: translateY(0);
+  transition: transform .25s ease-out;
+}
+
+
 .subtext {
   font-size: 15px;
   font-weight: 300;
