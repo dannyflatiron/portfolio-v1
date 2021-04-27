@@ -548,3 +548,95 @@ bottom: 16px;
 right: 16px;
 width:100px;
 }
+
+
+
+/* Thank You Page */
+
+
+body {
+  background: black;
+  text-align: center;
+}
+
+.text {
+  margin-left: -30px;
+  /* optical correction */
+}
+
+p {
+  margin-top: 20vh;
+  width: 45px;
+  display: inline-block;
+  font-size: 0px;
+  font-family: "Russo One";
+  font-weight: 900;
+  color: #fff;
+}
+
+p:nth-child(1) {
+  animation: showup 5s infinite 0.2s;
+}
+
+p:nth-child(2) {
+  animation: showup 5s infinite 0.4s;
+}
+
+p:nth-child(3) {
+  animation: showup 5s infinite 0.6s;
+}
+
+p:nth-child(4) {
+  animation: showup 5s infinite 0.8s;
+}
+
+p:nth-child(5) {
+  animation: showup 5s infinite 1s;
+}
+
+p:nth-child(6) {
+  animation: showup 5s infinite 1.2s;
+}
+
+p:nth-child(7) {
+  animation: showup 5s infinite 1.4s;
+}
+
+p:nth-child(8) {
+  animation: showup 5s infinite 1.6s;
+}
+
+p:nth-child(9) {
+  animation: showup 5s infinite 1.8s;
+}
+
+p:nth-child(10) {
+  margin-left: 25px;
+  animation: showup 5s infinite 2s;
+}
+
+@keyframes showup {
+  0% {
+    font-size: 0px;
+    transform: rotate(90deg);
+  }
+  5% {
+    font-size: 60px;
+  }
+  10% {
+    font-size: 66px;
+    transform: rotate(0deg);
+  }
+  60% {
+    font-size: 66px;
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    font-size: 66px;
+    transform: rotate(0deg);
+  }
+}
